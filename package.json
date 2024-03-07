@@ -1,0 +1,33 @@
+{
+  "name": "ethsigndemo",
+  "version": "1.0.0",
+  "type": "module",
+  "engines": {
+    "node": ">=21.7.0"
+  },
+  "engine-strict": true,
+  "description": "Demo of how to sign a transaction in eth ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Systerr/ethSignDemo.git"
+  },
+  "keywords": [
+    "eth",
+    "ethereum"
+  ],
+  "author": "Andrey Logunov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Systerr/ethSignDemo/issues"
+  },
+  "homepage": "https://github.com/Systerr/ethSignDemo#readme",
+  "dependencies": {
+    "@ethereumjs/rlp": "^5.0.2",
+    "@noble/curves": "^1.3.0",
+    "@noble/hashes": "^1.3.3"
+  }
+}
