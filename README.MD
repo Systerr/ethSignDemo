@@ -8,7 +8,7 @@ This demo required node.js >=21.7.0
 
 Please install it first
 
-[text](https://nodejs.org/en)
+[https://nodejs.org/en](https://nodejs.org/en)
 
 # Run
 
@@ -19,7 +19,7 @@ npm i
 ```
 
 This demo suppose to work with a nbn testnet mostly bacausse this testnet have a good faucet (no discord, twitter posting subscription, etc). But it easy to use other chains too
-[text](https://www.bnbchain.org/en/testnet-faucet)
+[https://www.bnbchain.org/en/testnet-faucet](https://www.bnbchain.org/en/testnet-faucet)
 
 ## Key generation
 

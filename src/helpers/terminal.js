@@ -1,8 +1,10 @@
 import readline from "node:readline/promises";
 
-export const waitForEnter = async (
-  text = "Press ENTER key to continue..."
-) => {
+/**
+ * Simple helper to waiting for user enter press
+ * @param {*} [text]
+ */
+export const waitForEnter = async (text = "Press ENTER key to continue...") => {
   const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout,

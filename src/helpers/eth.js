@@ -23,12 +23,21 @@ export const fullPublicKeyToAddress = (publicKey) => {
   return `0x${keccakHassHex.slice(-40).toString()}`; // take last 20 bytes as ethereum adress
 };
 
+/**
+ * convert private key to ETH address
+ * @param {string|Uint8Array} privateKey
+ * @returns
+ */
 export const privateKeyToAddress = (privateKey) => {
   const publicKey = secp256k1.getPublicKey(privateKey, false);
   return fullPublicKeyToAddress(publicKey);
 };
 
-
+/**
+ * Simple helper to add 0x to the hex strings
+ * @param {string} hex
+ * @returns
+ */
 export function add0x(hex) {
   return /^0x/i.test(hex) ? hex : `0x${hex}`;
 }
