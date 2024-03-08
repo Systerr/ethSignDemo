@@ -43,6 +43,9 @@ const maxPriorityFeePerGasReal = Number(maxPriorityFeePerGas)
   ? maxPriorityFeePerGas
   : add0x(1_000_000_000).toString(16);
 
+// https://ethereum.github.io/yellowpaper/paper.pdf
+// https://github.com/ethereum/EIPs/blob/master/EIPS/eip-1559.md#abstract
+// 0x02 || rlp([chain_id, nonce, max_priority_fee_per_gas, max_fee_per_gas, gas_limit, destination, amount, data, access_list, signature_y_parity, signature_r, signature_s]).  
 // all in hex. All Strast from '0x' empty ('0x0') perlaced with ''
 let transaction = {
   // EIP-1559 transaction type
@@ -66,6 +69,8 @@ let transaction = {
 console.log("Your TX is: ", transaction);
 await waitForEnter();
 
+
+// https://ethereum.org/en/developers/docs/data-structures-and-encoding/rlp/
 let encodedTx = RLP.encode(Object.values(transaction));
 
 // we should add tranaction type. in our case it '2' as we are doing EIP1559
