@@ -4,7 +4,7 @@ This is a tutorial of how to make a ETH transaction by using only low level cryp
 
 # Setup
 
-This demo required node.js >=21.7.0
+This demo required node.js >=20.12.0 (loadEnvFile feature)
 
 Please install it first
 
