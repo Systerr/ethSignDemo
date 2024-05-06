@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "type": "module",
   "engines": {
-    "node": ">=21.7.0"
+    "node": ">=20.12.0"
   },
   "engine-strict": true,
   "description": "Demo of how to sign a transaction in eth ",
